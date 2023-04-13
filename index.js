@@ -3,29 +3,32 @@ function fizzbuzz(){
     let x = prompt('enter some data : ');
     // console.log(typeof(x));
     let sum=0;
+    let y="";
+
     for(let i=0;i<x.length;i++){
          sum+=x[i]-'0';
     }
+
     for(let i=1;i<=sum;i++){
          if(i%4===0 && i%5===0){
-              console.log("Fizz ");
+              y+="Fizz ";
           }
           else if(i%4===0) {
-               console.log("Buzz ");
+               y+="Buzz ";
               
           }
 
           else if(i%5===0) {
-               console.log("FizzBuzz ");
+               y+="FizzBuzz ";
               
           }
 
           else{
-              console.log(i);
+              y+=i+" ";
 
           }
     }
-    
+    console.log(y);
 }
 
 fizzbuzz();
